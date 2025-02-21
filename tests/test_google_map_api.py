@@ -3,8 +3,8 @@ from utils.api import GoogleMapsApi
 
 
 class TestGoogleMapsApi:
-
-    def test_methods_api(self):
+    @staticmethod
+    def test_methods_api():
         print("Создание новой локации")
         address_for_new_location = create_address()
         result_post = GoogleMapsApi.create_new_place(address_for_new_location)
